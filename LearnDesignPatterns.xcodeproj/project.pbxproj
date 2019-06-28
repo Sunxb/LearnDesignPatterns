@@ -14,6 +14,9 @@
 		8D528A1122C496CB004930A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D528A1022C496CB004930A4 /* Assets.xcassets */; };
 		8D528A1422C496CB004930A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D528A1222C496CB004930A4 /* LaunchScreen.storyboard */; };
 		8D528A1722C496CB004930A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D528A1622C496CB004930A4 /* main.m */; };
+		8D528A2122C49C42004930A4 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D528A2022C49C42004930A4 /* Stroke.m */; };
+		8D528A2722C49D55004930A4 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D528A2622C49D55004930A4 /* Vertex.m */; };
+		8D528A2A22C49D6B004930A4 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D528A2922C49D6B004930A4 /* Dot.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,13 @@
 		8D528A1322C496CB004930A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D528A1522C496CB004930A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D528A1622C496CB004930A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8D528A1E22C49BBC004930A4 /* Mark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mark.h; sourceTree = "<group>"; };
+		8D528A1F22C49C42004930A4 /* Stroke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stroke.h; sourceTree = "<group>"; };
+		8D528A2022C49C42004930A4 /* Stroke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stroke.m; sourceTree = "<group>"; };
+		8D528A2522C49D55004930A4 /* Vertex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vertex.h; sourceTree = "<group>"; };
+		8D528A2622C49D55004930A4 /* Vertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
+		8D528A2822C49D6B004930A4 /* Dot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
+		8D528A2922C49D6B004930A4 /* Dot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +71,7 @@
 		8D528A0322C496C6004930A4 /* LearnDesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				8D528A1D22C49B9E004930A4 /* Model */,
 				8D528A0422C496C6004930A4 /* AppDelegate.h */,
 				8D528A0522C496C6004930A4 /* AppDelegate.m */,
 				8D528A0722C496C6004930A4 /* SceneDelegate.h */,
@@ -74,6 +85,20 @@
 				8D528A1622C496CB004930A4 /* main.m */,
 			);
 			path = LearnDesignPatterns;
+			sourceTree = "<group>";
+		};
+		8D528A1D22C49B9E004930A4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D528A1E22C49BBC004930A4 /* Mark.h */,
+				8D528A1F22C49C42004930A4 /* Stroke.h */,
+				8D528A2022C49C42004930A4 /* Stroke.m */,
+				8D528A2522C49D55004930A4 /* Vertex.h */,
+				8D528A2622C49D55004930A4 /* Vertex.m */,
+				8D528A2822C49D6B004930A4 /* Dot.h */,
+				8D528A2922C49D6B004930A4 /* Dot.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,8 +172,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D528A0C22C496C6004930A4 /* ViewController.m in Sources */,
+				8D528A2722C49D55004930A4 /* Vertex.m in Sources */,
+				8D528A2122C49C42004930A4 /* Stroke.m in Sources */,
 				8D528A0622C496C6004930A4 /* AppDelegate.m in Sources */,
 				8D528A1722C496CB004930A4 /* main.m in Sources */,
+				8D528A2A22C49D6B004930A4 /* Dot.m in Sources */,
 				8D528A0922C496C6004930A4 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,7 +326,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sunxb.LearnDesignPatterns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +343,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sunxb.LearnDesignPatterns;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
