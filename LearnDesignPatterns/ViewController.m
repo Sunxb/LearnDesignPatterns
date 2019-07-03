@@ -11,6 +11,14 @@
 #import "Dot.h"
 #import "CanvasViewGenerator.h"
 
+#import "CharactorDirector.h"
+#import "CharactorBuilder.h"
+
+#import "AnotherCharactorDirector.h"
+#import "AnotherCharactorBuilderOne.h"
+#import "AnotherCharactorBuilderTwo.h"
+
+
 @interface ViewController ()
 
 @end
@@ -20,15 +28,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // 工厂方法
-//    CanvasViewGenerator * generator = [ClothCanvasViewGenerator new];
-//    CanvasView * v = [generator canvasViewWithFrame:CGRectMake(0, 60, 40, 40)];
-//    [self.view addSubview:v];
+
     
-    
-    NSLog(@"%f",[UIApplication sharedApplication].statusBarFrame.size.height);
-    
-    
+    [self builderTest2];
     
     NSLog(@"--");
 
@@ -51,6 +53,28 @@ void test1(){
     Stroke * stroke2 = [stroke copy];
 }
 
+/// 工厂方法  通过不同的generator创建不同的view
+- (void)factory {
+    // 工厂方法  通过不同的generator创建不同的view
+    CanvasViewGenerator * generator = [ClothCanvasViewGenerator new];
+    CanvasView * v = [generator canvasViewWithFrame:CGRectMake(0, 60, 40, 40)];
+    [self.view addSubview:v];
+}
 
+
+- (void)builderTest1 {
+    CharactorDirector * director = [[CharactorDirector alloc] init];
+    Charactor * charactorA =  [director createCharartorA:[CharactorBuilder new]];
+    Charactor * charactorB =  [director createCharartorB:[CharactorBuilder new]];
+    NSLog(@"---");
+}
+
+
+- (void)builderTest2 {
+    AnotherCharactorDirector * director = [[AnotherCharactorDirector alloc] init];
+    Charactor * charactorA =  [director createCharactor:[AnotherCharactorBuilderOne new]];
+    Charactor * charactorB =  [director createCharactor:[AnotherCharactorBuilderTwo new]];
+    NSLog(@"---");
+}
 
 @end
