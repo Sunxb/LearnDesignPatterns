@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D4CF0DC22CB2ED200938C7E /* CanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CF0D822CB2ED200938C7E /* CanvasViewGenerator.m */; };
+		8D4CF0DD22CB2ED200938C7E /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CF0D922CB2ED200938C7E /* CanvasView.m */; };
 		8D528A0622C496C6004930A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D528A0522C496C6004930A4 /* AppDelegate.m */; };
 		8D528A0922C496C6004930A4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D528A0822C496C6004930A4 /* SceneDelegate.m */; };
 		8D528A0C22C496C6004930A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D528A0B22C496C6004930A4 /* ViewController.m */; };
@@ -20,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D4CF0D822CB2ED200938C7E /* CanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasViewGenerator.m; sourceTree = "<group>"; };
+		8D4CF0D922CB2ED200938C7E /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
+		8D4CF0DA22CB2ED200938C7E /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
+		8D4CF0DB22CB2ED200938C7E /* CanvasViewGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasViewGenerator.h; sourceTree = "<group>"; };
 		8D528A0122C496C6004930A4 /* LearnDesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnDesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D528A0422C496C6004930A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D528A0522C496C6004930A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,6 +58,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D4CF0D722CB2ED200938C7E /* 工厂方法 */ = {
+			isa = PBXGroup;
+			children = (
+				8D4CF0D822CB2ED200938C7E /* CanvasViewGenerator.m */,
+				8D4CF0D922CB2ED200938C7E /* CanvasView.m */,
+				8D4CF0DA22CB2ED200938C7E /* CanvasView.h */,
+				8D4CF0DB22CB2ED200938C7E /* CanvasViewGenerator.h */,
+			);
+			path = "工厂方法";
+			sourceTree = "<group>";
+		};
 		8D5289F822C496C6004930A4 = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +88,7 @@
 		8D528A0322C496C6004930A4 /* LearnDesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				8D4CF0D722CB2ED200938C7E /* 工厂方法 */,
 				8D528A1D22C49B9E004930A4 /* Model */,
 				8D528A0422C496C6004930A4 /* AppDelegate.h */,
 				8D528A0522C496C6004930A4 /* AppDelegate.m */,
@@ -171,6 +189,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D4CF0DC22CB2ED200938C7E /* CanvasViewGenerator.m in Sources */,
+				8D4CF0DD22CB2ED200938C7E /* CanvasView.m in Sources */,
 				8D528A0C22C496C6004930A4 /* ViewController.m in Sources */,
 				8D528A2722C49D55004930A4 /* Vertex.m in Sources */,
 				8D528A2122C49C42004930A4 /* Stroke.m in Sources */,
