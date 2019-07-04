@@ -18,6 +18,12 @@
 #import "AnotherCharactorBuilderOne.h"
 #import "AnotherCharactorBuilderTwo.h"
 
+#import "SSOldModel.h"
+#import "SSOldModelAdapter.h"
+#import "SSNewModel.h"
+#import "SSNewModelAdapter.h"
+#import "SSView.h"
+
 
 @interface ViewController ()
 
@@ -30,7 +36,7 @@
     
 
     
-    [self builderTest2];
+    [self adapterTest];
     
     NSLog(@"--");
 
@@ -53,6 +59,8 @@ void test1(){
     Stroke * stroke2 = [stroke copy];
 }
 
+#pragma mark - 工厂方法
+
 /// 工厂方法  通过不同的generator创建不同的view
 - (void)factory {
     // 工厂方法  通过不同的generator创建不同的view
@@ -61,6 +69,7 @@ void test1(){
     [self.view addSubview:v];
 }
 
+#pragma mark- 生成器
 
 - (void)builderTest1 {
     CharactorDirector * director = [[CharactorDirector alloc] init];
@@ -75,6 +84,36 @@ void test1(){
     Charactor * charactorA =  [director createCharactor:[AnotherCharactorBuilderOne new]];
     Charactor * charactorB =  [director createCharactor:[AnotherCharactorBuilderTwo new]];
     NSLog(@"---");
+}
+
+#pragma mark - 适配器
+
+- (void)adapterTest {
+    // model
+    SSOldModel * oldModel = [SSOldModel new];
+    oldModel.imageName = @"old-model-image-name";
+    oldModel.name = @"old-model-label-name";
+    
+    SSNewModel * newModel = [SSNewModel new];
+    SSNewModelItem * item = [SSNewModelItem new];
+    item.imageName = @"new-model-image-name";
+    newModel.item = item;
+    newModel.name = @"new-model-label-name";
+    
+    // adapter
+    
+    SSOldModelAdapter * oldAdapter = [SSOldModelAdapter new];
+    oldAdapter.oldModel = oldModel;
+    
+    SSNewModelAdapter * newAdapter = [SSNewModelAdapter new];
+    newAdapter.model = newModel;
+    
+    SSView * sview = [[SSView alloc] initWithFrame:CGRectZero];
+    //
+    [sview loadUIWithData:newAdapter];
+    
+    [sview loadUIWithData:oldAdapter];
+
 }
 
 @end

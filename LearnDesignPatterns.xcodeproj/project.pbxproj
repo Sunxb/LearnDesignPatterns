@@ -26,6 +26,11 @@
 		8D528A2122C49C42004930A4 /* Stroke.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D528A2022C49C42004930A4 /* Stroke.m */; };
 		8D528A2722C49D55004930A4 /* Vertex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D528A2622C49D55004930A4 /* Vertex.m */; };
 		8D528A2A22C49D6B004930A4 /* Dot.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D528A2922C49D6B004930A4 /* Dot.m */; };
+		8D74843522CDD2C800A03538 /* SSView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D74843422CDD2C800A03538 /* SSView.m */; };
+		8D74843822CDD42600A03538 /* SSOldModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D74843722CDD42500A03538 /* SSOldModel.m */; };
+		8D74843B22CDD4F000A03538 /* SSNewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D74843A22CDD4F000A03538 /* SSNewModel.m */; };
+		8D74843F22CDE6E000A03538 /* SSOldModelAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D74843E22CDE6E000A03538 /* SSOldModelAdapter.m */; };
+		8D74844222CDE6F500A03538 /* SSNewModelAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D74844122CDE6F500A03538 /* SSNewModelAdapter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +71,17 @@
 		8D528A2622C49D55004930A4 /* Vertex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vertex.m; sourceTree = "<group>"; };
 		8D528A2822C49D6B004930A4 /* Dot.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dot.h; sourceTree = "<group>"; };
 		8D528A2922C49D6B004930A4 /* Dot.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dot.m; sourceTree = "<group>"; };
+		8D74843322CDD2C800A03538 /* SSView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSView.h; sourceTree = "<group>"; };
+		8D74843422CDD2C800A03538 /* SSView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSView.m; sourceTree = "<group>"; };
+		8D74843622CDD42500A03538 /* SSOldModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSOldModel.h; sourceTree = "<group>"; };
+		8D74843722CDD42500A03538 /* SSOldModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSOldModel.m; sourceTree = "<group>"; };
+		8D74843922CDD4F000A03538 /* SSNewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSNewModel.h; sourceTree = "<group>"; };
+		8D74843A22CDD4F000A03538 /* SSNewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSNewModel.m; sourceTree = "<group>"; };
+		8D74843C22CDE69F00A03538 /* SSViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSViewProtocol.h; sourceTree = "<group>"; };
+		8D74843D22CDE6E000A03538 /* SSOldModelAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSOldModelAdapter.h; sourceTree = "<group>"; };
+		8D74843E22CDE6E000A03538 /* SSOldModelAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSOldModelAdapter.m; sourceTree = "<group>"; };
+		8D74844022CDE6F500A03538 /* SSNewModelAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SSNewModelAdapter.h; sourceTree = "<group>"; };
+		8D74844122CDE6F500A03538 /* SSNewModelAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SSNewModelAdapter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +153,7 @@
 		8D528A0322C496C6004930A4 /* LearnDesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				8D74843222CDD0D600A03538 /* 适配器 */,
 				8D4CF0E822CC5A9000938C7E /* 生成器2 */,
 				8D4CF0DE22CC50E800938C7E /* 生成器 */,
 				8D4CF0D722CB2ED200938C7E /* 工厂方法 */,
@@ -168,6 +185,24 @@
 				8D528A2922C49D6B004930A4 /* Dot.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8D74843222CDD0D600A03538 /* 适配器 */ = {
+			isa = PBXGroup;
+			children = (
+				8D74843322CDD2C800A03538 /* SSView.h */,
+				8D74843422CDD2C800A03538 /* SSView.m */,
+				8D74843C22CDE69F00A03538 /* SSViewProtocol.h */,
+				8D74843622CDD42500A03538 /* SSOldModel.h */,
+				8D74843722CDD42500A03538 /* SSOldModel.m */,
+				8D74843922CDD4F000A03538 /* SSNewModel.h */,
+				8D74843A22CDD4F000A03538 /* SSNewModel.m */,
+				8D74843D22CDE6E000A03538 /* SSOldModelAdapter.h */,
+				8D74843E22CDE6E000A03538 /* SSOldModelAdapter.m */,
+				8D74844022CDE6F500A03538 /* SSNewModelAdapter.h */,
+				8D74844122CDE6F500A03538 /* SSNewModelAdapter.m */,
+			);
+			path = "适配器";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,17 +280,22 @@
 				8D4CF0E722CC54B600938C7E /* CharactorDirector.m in Sources */,
 				8D4CF0E422CC52C000938C7E /* CharactorBuilder.m in Sources */,
 				8D4CF0E122CC515E00938C7E /* Charactor.m in Sources */,
+				8D74844222CDE6F500A03538 /* SSNewModelAdapter.m in Sources */,
 				8D4CF0EB22CC5AB400938C7E /* AnotherCharactorDirector.m in Sources */,
 				8D4CF0DD22CB2ED200938C7E /* CanvasView.m in Sources */,
 				8D528A0C22C496C6004930A4 /* ViewController.m in Sources */,
 				8D528A2722C49D55004930A4 /* Vertex.m in Sources */,
+				8D74843B22CDD4F000A03538 /* SSNewModel.m in Sources */,
 				8D4CF0F122CC5B2B00938C7E /* AnotherCharactorBuilder.m in Sources */,
 				8D528A2122C49C42004930A4 /* Stroke.m in Sources */,
 				8D528A0622C496C6004930A4 /* AppDelegate.m in Sources */,
 				8D528A1722C496CB004930A4 /* main.m in Sources */,
 				8D528A2A22C49D6B004930A4 /* Dot.m in Sources */,
 				8D4CF0EE22CC5B0700938C7E /* AnotherCharactorBuilderOne.m in Sources */,
+				8D74843522CDD2C800A03538 /* SSView.m in Sources */,
+				8D74843F22CDE6E000A03538 /* SSOldModelAdapter.m in Sources */,
 				8D528A0922C496C6004930A4 /* SceneDelegate.m in Sources */,
+				8D74843822CDD42600A03538 /* SSOldModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
