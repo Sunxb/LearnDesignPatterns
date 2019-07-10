@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D161D4122D5CEA9003CE091 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D161D4022D5CEA9003CE091 /* FirstViewController.m */; };
+		8D161D4422D5CEB6003CE091 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D161D4322D5CEB6003CE091 /* SecondViewController.m */; };
+		8D161D4722D5CEED003CE091 /* Target_FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D161D4622D5CEED003CE091 /* Target_FirstViewController.m */; };
 		8D4CF0DC22CB2ED200938C7E /* CanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CF0D822CB2ED200938C7E /* CanvasViewGenerator.m */; };
 		8D4CF0DD22CB2ED200938C7E /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CF0D922CB2ED200938C7E /* CanvasView.m */; };
 		8D4CF0E122CC515E00938C7E /* Charactor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CF0E022CC515E00938C7E /* Charactor.m */; };
@@ -16,10 +19,10 @@
 		8D4CF0EE22CC5B0700938C7E /* AnotherCharactorBuilderOne.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CF0ED22CC5B0700938C7E /* AnotherCharactorBuilderOne.m */; };
 		8D4CF0F122CC5B2B00938C7E /* AnotherCharactorBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CF0F022CC5B2B00938C7E /* AnotherCharactorBuilder.m */; };
 		8D4CF0F422CC5CAF00938C7E /* AnotherCharactorBuilderTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CF0F322CC5CAF00938C7E /* AnotherCharactorBuilderTwo.m */; };
+		8D4FF85022D587DF00CB9B4F /* CTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4FF84E22D587DE00CB9B4F /* CTMediator.m */; };
 		8D528A0622C496C6004930A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D528A0522C496C6004930A4 /* AppDelegate.m */; };
 		8D528A0922C496C6004930A4 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D528A0822C496C6004930A4 /* SceneDelegate.m */; };
 		8D528A0C22C496C6004930A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D528A0B22C496C6004930A4 /* ViewController.m */; };
-		8D528A0F22C496C6004930A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D528A0D22C496C6004930A4 /* Main.storyboard */; };
 		8D528A1122C496CB004930A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D528A1022C496CB004930A4 /* Assets.xcassets */; };
 		8D528A1422C496CB004930A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D528A1222C496CB004930A4 /* LaunchScreen.storyboard */; };
 		8D528A1722C496CB004930A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D528A1622C496CB004930A4 /* main.m */; };
@@ -34,6 +37,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D161D3F22D5CEA9003CE091 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		8D161D4022D5CEA9003CE091 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		8D161D4222D5CEB6003CE091 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		8D161D4322D5CEB6003CE091 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		8D161D4522D5CEED003CE091 /* Target_FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_FirstViewController.h; sourceTree = "<group>"; };
+		8D161D4622D5CEED003CE091 /* Target_FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_FirstViewController.m; sourceTree = "<group>"; };
 		8D4CF0D822CB2ED200938C7E /* CanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasViewGenerator.m; sourceTree = "<group>"; };
 		8D4CF0D922CB2ED200938C7E /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
 		8D4CF0DA22CB2ED200938C7E /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
@@ -52,6 +61,8 @@
 		8D4CF0F022CC5B2B00938C7E /* AnotherCharactorBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnotherCharactorBuilder.m; sourceTree = "<group>"; };
 		8D4CF0F222CC5CAF00938C7E /* AnotherCharactorBuilderTwo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnotherCharactorBuilderTwo.h; sourceTree = "<group>"; };
 		8D4CF0F322CC5CAF00938C7E /* AnotherCharactorBuilderTwo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnotherCharactorBuilderTwo.m; sourceTree = "<group>"; };
+		8D4FF84E22D587DE00CB9B4F /* CTMediator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTMediator.m; sourceTree = "<group>"; };
+		8D4FF84F22D587DE00CB9B4F /* CTMediator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTMediator.h; sourceTree = "<group>"; };
 		8D528A0122C496C6004930A4 /* LearnDesignPatterns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnDesignPatterns.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D528A0422C496C6004930A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D528A0522C496C6004930A4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -59,7 +70,6 @@
 		8D528A0822C496C6004930A4 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		8D528A0A22C496C6004930A4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		8D528A0B22C496C6004930A4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		8D528A0E22C496C6004930A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D528A1022C496CB004930A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D528A1322C496CB004930A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D528A1522C496CB004930A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +105,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D161D3E22D5CE97003CE091 /* TestVC */ = {
+			isa = PBXGroup;
+			children = (
+				8D161D4522D5CEED003CE091 /* Target_FirstViewController.h */,
+				8D161D4622D5CEED003CE091 /* Target_FirstViewController.m */,
+				8D161D3F22D5CEA9003CE091 /* FirstViewController.h */,
+				8D161D4022D5CEA9003CE091 /* FirstViewController.m */,
+				8D161D4222D5CEB6003CE091 /* SecondViewController.h */,
+				8D161D4322D5CEB6003CE091 /* SecondViewController.m */,
+			);
+			path = TestVC;
+			sourceTree = "<group>";
+		};
 		8D4CF0D722CB2ED200938C7E /* 工厂方法 */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +157,16 @@
 			path = "生成器2";
 			sourceTree = "<group>";
 		};
+		8D4FF84D22D587DE00CB9B4F /* 中介者 */ = {
+			isa = PBXGroup;
+			children = (
+				8D161D3E22D5CE97003CE091 /* TestVC */,
+				8D4FF84F22D587DE00CB9B4F /* CTMediator.h */,
+				8D4FF84E22D587DE00CB9B4F /* CTMediator.m */,
+			);
+			path = "中介者";
+			sourceTree = "<group>";
+		};
 		8D5289F822C496C6004930A4 = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +186,7 @@
 		8D528A0322C496C6004930A4 /* LearnDesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
+				8D4FF84D22D587DE00CB9B4F /* 中介者 */,
 				8D74843222CDD0D600A03538 /* 适配器 */,
 				8D4CF0E822CC5A9000938C7E /* 生成器2 */,
 				8D4CF0DE22CC50E800938C7E /* 生成器 */,
@@ -164,7 +198,6 @@
 				8D528A0822C496C6004930A4 /* SceneDelegate.m */,
 				8D528A0A22C496C6004930A4 /* ViewController.h */,
 				8D528A0B22C496C6004930A4 /* ViewController.m */,
-				8D528A0D22C496C6004930A4 /* Main.storyboard */,
 				8D528A1022C496CB004930A4 /* Assets.xcassets */,
 				8D528A1222C496CB004930A4 /* LaunchScreen.storyboard */,
 				8D528A1522C496CB004930A4 /* Info.plist */,
@@ -264,7 +297,6 @@
 			files = (
 				8D528A1422C496CB004930A4 /* LaunchScreen.storyboard in Resources */,
 				8D528A1122C496CB004930A4 /* Assets.xcassets in Resources */,
-				8D528A0F22C496C6004930A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,29 +319,25 @@
 				8D528A2722C49D55004930A4 /* Vertex.m in Sources */,
 				8D74843B22CDD4F000A03538 /* SSNewModel.m in Sources */,
 				8D4CF0F122CC5B2B00938C7E /* AnotherCharactorBuilder.m in Sources */,
+				8D161D4422D5CEB6003CE091 /* SecondViewController.m in Sources */,
 				8D528A2122C49C42004930A4 /* Stroke.m in Sources */,
+				8D161D4722D5CEED003CE091 /* Target_FirstViewController.m in Sources */,
 				8D528A0622C496C6004930A4 /* AppDelegate.m in Sources */,
 				8D528A1722C496CB004930A4 /* main.m in Sources */,
 				8D528A2A22C49D6B004930A4 /* Dot.m in Sources */,
 				8D4CF0EE22CC5B0700938C7E /* AnotherCharactorBuilderOne.m in Sources */,
 				8D74843522CDD2C800A03538 /* SSView.m in Sources */,
 				8D74843F22CDE6E000A03538 /* SSOldModelAdapter.m in Sources */,
+				8D161D4122D5CEA9003CE091 /* FirstViewController.m in Sources */,
 				8D528A0922C496C6004930A4 /* SceneDelegate.m in Sources */,
 				8D74843822CDD42600A03538 /* SSOldModel.m in Sources */,
+				8D4FF85022D587DF00CB9B4F /* CTMediator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		8D528A0D22C496C6004930A4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8D528A0E22C496C6004930A4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8D528A1222C496CB004930A4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -438,6 +466,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CT357TP6P6;
 				INFOPLIST_FILE = LearnDesignPatterns/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +484,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CT357TP6P6;
 				INFOPLIST_FILE = LearnDesignPatterns/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

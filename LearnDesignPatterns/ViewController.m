@@ -24,6 +24,7 @@
 #import "SSNewModelAdapter.h"
 #import "SSView.h"
 
+#import "CTMediator.h"
 
 @interface ViewController ()
 
@@ -33,15 +34,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     
 
     
-    [self adapterTest];
     
     NSLog(@"--");
 
 }
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self mediator];
+}
 
 void test1(){
     Dot * d1 = [[Dot alloc] initWithLocation:CGPointMake(0, 0)];
@@ -114,6 +119,18 @@ void test1(){
     
     [sview loadUIWithData:oldAdapter];
 
+}
+
+- (void)mediator {
+    
+    void (^callBackBlock)(NSString *type) = ^(NSString *type) {
+        NSLog(@"%@",type);
+    };
+    NSString * name = @"test";
+    [[CTMediator shareInstance] performTarget:@"FirstViewController"
+                                       action:@"pushToFirstVC:"
+                                       params:@{@"callBack":callBackBlock,@"name":name}
+                            shouldCacheTarget:NO];
 }
 
 @end

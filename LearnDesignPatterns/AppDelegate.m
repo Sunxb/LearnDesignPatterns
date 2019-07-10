@@ -17,6 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    Class vcClass = NSClassFromString(@"ViewController");
+    if (vcClass) {
+        self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[vcClass new]];
+        [self.window makeKeyAndVisible];
+    }
     return YES;
 }
 
@@ -25,9 +30,9 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+#if 0
 
 #pragma mark - UISceneSession lifecycle
-
 
 - (UISceneConfiguration *)application:(UIApplication *)application configurationForConnectingSceneSession:(UISceneSession *)connectingSceneSession options:(UISceneConnectionOptions *)options {
     // Called when a new scene session is being created.
@@ -42,6 +47,6 @@
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
 }
 
-
+#endif
 
 @end
