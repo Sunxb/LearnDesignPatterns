@@ -24,6 +24,7 @@ typedef void(^DismissCallBack)(NSString * type);
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.title = @"first";
     // Do any additional setup after loading the view.
 }
 
@@ -49,11 +50,10 @@ typedef void(^DismissCallBack)(NSString * type);
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
-    [self dismissViewControllerAnimated:YES completion:^{
-        if (self.callBack) {
-            self.callBack([NSString stringWithFormat:@"%@--%@",self.nameStr,[NSDate date]]);
-        }
-    }];
+    if (self.callBack) {
+        self.callBack([NSString stringWithFormat:@"%@--%@",self.nameStr,[NSDate date]]);
+    }
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 /*

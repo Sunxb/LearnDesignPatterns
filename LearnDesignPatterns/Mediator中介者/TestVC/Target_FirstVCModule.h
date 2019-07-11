@@ -6,14 +6,14 @@
 //  Copyright © 2019 sun. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Target_FirstViewController : NSObject
+@interface Target_FirstVCModule : NSObject
 
 // param 包含callBack
-- (void)Action_pushToFirstVC:(NSDictionary *)param;
+- (UIViewController *)Action_pushToFirstVC:(NSDictionary *)param;
 
 @end
 

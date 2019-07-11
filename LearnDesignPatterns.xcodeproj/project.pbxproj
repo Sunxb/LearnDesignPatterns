@@ -9,7 +9,8 @@
 /* Begin PBXBuildFile section */
 		8D161D4122D5CEA9003CE091 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D161D4022D5CEA9003CE091 /* FirstViewController.m */; };
 		8D161D4422D5CEB6003CE091 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D161D4322D5CEB6003CE091 /* SecondViewController.m */; };
-		8D161D4722D5CEED003CE091 /* Target_FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D161D4622D5CEED003CE091 /* Target_FirstViewController.m */; };
+		8D161D4722D5CEED003CE091 /* Target_FirstVCModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D161D4622D5CEED003CE091 /* Target_FirstVCModule.m */; };
+		8D161D4E22D7074F003CE091 /* CTMediator+FirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D161D4D22D7074F003CE091 /* CTMediator+FirstVC.m */; };
 		8D4CF0DC22CB2ED200938C7E /* CanvasViewGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CF0D822CB2ED200938C7E /* CanvasViewGenerator.m */; };
 		8D4CF0DD22CB2ED200938C7E /* CanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CF0D922CB2ED200938C7E /* CanvasView.m */; };
 		8D4CF0E122CC515E00938C7E /* Charactor.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4CF0E022CC515E00938C7E /* Charactor.m */; };
@@ -41,8 +42,10 @@
 		8D161D4022D5CEA9003CE091 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		8D161D4222D5CEB6003CE091 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		8D161D4322D5CEB6003CE091 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-		8D161D4522D5CEED003CE091 /* Target_FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_FirstViewController.h; sourceTree = "<group>"; };
-		8D161D4622D5CEED003CE091 /* Target_FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_FirstViewController.m; sourceTree = "<group>"; };
+		8D161D4522D5CEED003CE091 /* Target_FirstVCModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target_FirstVCModule.h; sourceTree = "<group>"; };
+		8D161D4622D5CEED003CE091 /* Target_FirstVCModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target_FirstVCModule.m; sourceTree = "<group>"; };
+		8D161D4C22D7074F003CE091 /* CTMediator+FirstVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CTMediator+FirstVC.h"; sourceTree = "<group>"; };
+		8D161D4D22D7074F003CE091 /* CTMediator+FirstVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CTMediator+FirstVC.m"; sourceTree = "<group>"; };
 		8D4CF0D822CB2ED200938C7E /* CanvasViewGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasViewGenerator.m; sourceTree = "<group>"; };
 		8D4CF0D922CB2ED200938C7E /* CanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CanvasView.m; sourceTree = "<group>"; };
 		8D4CF0DA22CB2ED200938C7E /* CanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CanvasView.h; sourceTree = "<group>"; };
@@ -108,8 +111,8 @@
 		8D161D3E22D5CE97003CE091 /* TestVC */ = {
 			isa = PBXGroup;
 			children = (
-				8D161D4522D5CEED003CE091 /* Target_FirstViewController.h */,
-				8D161D4622D5CEED003CE091 /* Target_FirstViewController.m */,
+				8D161D4522D5CEED003CE091 /* Target_FirstVCModule.h */,
+				8D161D4622D5CEED003CE091 /* Target_FirstVCModule.m */,
 				8D161D3F22D5CEA9003CE091 /* FirstViewController.h */,
 				8D161D4022D5CEA9003CE091 /* FirstViewController.m */,
 				8D161D4222D5CEB6003CE091 /* SecondViewController.h */,
@@ -157,14 +160,16 @@
 			path = "生成器2";
 			sourceTree = "<group>";
 		};
-		8D4FF84D22D587DE00CB9B4F /* 中介者 */ = {
+		8D4FF84D22D587DE00CB9B4F /* Mediator中介者 */ = {
 			isa = PBXGroup;
 			children = (
+				8D161D4C22D7074F003CE091 /* CTMediator+FirstVC.h */,
+				8D161D4D22D7074F003CE091 /* CTMediator+FirstVC.m */,
 				8D161D3E22D5CE97003CE091 /* TestVC */,
 				8D4FF84F22D587DE00CB9B4F /* CTMediator.h */,
 				8D4FF84E22D587DE00CB9B4F /* CTMediator.m */,
 			);
-			path = "中介者";
+			path = "Mediator中介者";
 			sourceTree = "<group>";
 		};
 		8D5289F822C496C6004930A4 = {
@@ -186,7 +191,7 @@
 		8D528A0322C496C6004930A4 /* LearnDesignPatterns */ = {
 			isa = PBXGroup;
 			children = (
-				8D4FF84D22D587DE00CB9B4F /* 中介者 */,
+				8D4FF84D22D587DE00CB9B4F /* Mediator中介者 */,
 				8D74843222CDD0D600A03538 /* 适配器 */,
 				8D4CF0E822CC5A9000938C7E /* 生成器2 */,
 				8D4CF0DE22CC50E800938C7E /* 生成器 */,
@@ -318,10 +323,11 @@
 				8D528A0C22C496C6004930A4 /* ViewController.m in Sources */,
 				8D528A2722C49D55004930A4 /* Vertex.m in Sources */,
 				8D74843B22CDD4F000A03538 /* SSNewModel.m in Sources */,
+				8D161D4E22D7074F003CE091 /* CTMediator+FirstVC.m in Sources */,
 				8D4CF0F122CC5B2B00938C7E /* AnotherCharactorBuilder.m in Sources */,
 				8D161D4422D5CEB6003CE091 /* SecondViewController.m in Sources */,
 				8D528A2122C49C42004930A4 /* Stroke.m in Sources */,
-				8D161D4722D5CEED003CE091 /* Target_FirstViewController.m in Sources */,
+				8D161D4722D5CEED003CE091 /* Target_FirstVCModule.m in Sources */,
 				8D528A0622C496C6004930A4 /* AppDelegate.m in Sources */,
 				8D528A1722C496CB004930A4 /* main.m in Sources */,
 				8D528A2A22C49D6B004930A4 /* Dot.m in Sources */,

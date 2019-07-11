@@ -24,7 +24,7 @@
 #import "SSNewModelAdapter.h"
 #import "SSView.h"
 
-#import "CTMediator.h"
+#import "CTMediator+FirstVC.h"
 
 @interface ViewController ()
 
@@ -36,11 +36,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-
-    
     
     NSLog(@"--");
-
 }
 
 
@@ -127,10 +124,10 @@ void test1(){
         NSLog(@"%@",type);
     };
     NSString * name = @"test";
-    [[CTMediator shareInstance] performTarget:@"FirstViewController"
-                                       action:@"pushToFirstVC:"
-                                       params:@{@"callBack":callBackBlock,@"name":name}
-                            shouldCacheTarget:NO];
+
+    UIViewController * vc = [[CTMediator shareInstance] CTMediator_firstVCWithName:name callBack:callBackBlock];
+    [self.navigationController pushViewController:vc animated:YES];
+
 }
 
 @end
