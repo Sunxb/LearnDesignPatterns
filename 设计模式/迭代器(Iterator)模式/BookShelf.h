@@ -11,12 +11,13 @@
 @class Book;
 
 @interface BookShelf : NSObject <Aggregate>
-
+@property (nonatomic, assign) NSInteger maxCount;
 - (void)addBook:(Book *)book;
 - (void)removeBookAtIndex:(NSInteger)index;
 - (NSInteger)getLength;
 - (Book *)bookAtIndex:(NSInteger)index;
 #pragma mark - protocol
 - (id<Iterator>)iterator;
+- (id<Operator>)operate;
 @end
 

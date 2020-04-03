@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8D38C8F42436FB850027C50E /* BookShelfOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D38C8F32436FB850027C50E /* BookShelfOperator.m */; };
 		8D72F8DE24333D2000F847BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D72F8DD24333D2000F847BE /* AppDelegate.m */; };
 		8D72F8E424333D2000F847BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D72F8E324333D2000F847BE /* ViewController.m */; };
 		8D72F8E724333D2100F847BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D72F8E524333D2100F847BE /* Main.storyboard */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8D38C8F12436FABF0027C50E /* Operator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Operator.h; sourceTree = "<group>"; };
+		8D38C8F22436FB850027C50E /* BookShelfOperator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookShelfOperator.h; sourceTree = "<group>"; };
+		8D38C8F32436FB850027C50E /* BookShelfOperator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookShelfOperator.m; sourceTree = "<group>"; };
 		8D72F8D924333D2000F847BE /* 设计模式.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "设计模式.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D72F8DC24333D2000F847BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D72F8DD24333D2000F847BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				8D72F8FF24333E7100F847BE /* Aggregate.h */,
+				8D38C8F12436FABF0027C50E /* Operator.h */,
 				8D72F90024333E8500F847BE /* Iterator.h */,
 				8D72F8F624333DF600F847BE /* Book.h */,
 				8D72F8F724333DF600F847BE /* Book.m */,
@@ -94,6 +99,8 @@
 				8D72F8FA24333E1700F847BE /* BookShelf.m */,
 				8D72F8FC24333E3A00F847BE /* BookShelfIterator.h */,
 				8D72F8FD24333E3A00F847BE /* BookShelfIterator.m */,
+				8D38C8F22436FB850027C50E /* BookShelfOperator.h */,
+				8D38C8F32436FB850027C50E /* BookShelfOperator.m */,
 			);
 			path = "迭代器(Iterator)模式";
 			sourceTree = "<group>";
@@ -174,6 +181,7 @@
 				8D72F8FE24333E3A00F847BE /* BookShelfIterator.m in Sources */,
 				8D72F8DE24333D2000F847BE /* AppDelegate.m in Sources */,
 				8D72F8EF24333D2200F847BE /* main.m in Sources */,
+				8D38C8F42436FB850027C50E /* BookShelfOperator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

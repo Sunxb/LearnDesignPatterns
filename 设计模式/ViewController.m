@@ -36,11 +36,19 @@
     Book * book5 = [[Book alloc] initWithBookName:@"第5本书"];
     
     BookShelf * shelf = [[BookShelf alloc] init];
-    [shelf addBook:book1];
-    [shelf addBook:book2];
-    [shelf addBook:book3];
-    [shelf addBook:book4];
-    [shelf addBook:book5];
+    shelf.maxCount = 3;
+//    [shelf addBook:book1];
+//    [shelf addBook:book2];
+//    [shelf addBook:book3];
+//    [shelf addBook:book4];
+//    [shelf addBook:book5];
+    
+    id <Operator> operat = shelf.operate;
+    [operat addObject:book1];
+    [operat addObject:book2];
+    [operat addObject:book3];
+    [operat addObject:book4];
+    [operat addObject:book5];
     
     id<Iterator> iterator = shelf.iterator;
     while (iterator.hasNext) {

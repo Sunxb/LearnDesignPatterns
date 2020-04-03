@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "Iterator.h"
+#import "Operator.h"
 
 @protocol Aggregate <NSObject>
 - (id<Iterator>)iterator;
+- (id<Operator>)operate;
 @end
 

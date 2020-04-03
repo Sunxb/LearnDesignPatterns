@@ -8,6 +8,8 @@
 
 #import "BookShelf.h"
 #import "BookShelfIterator.h"
+#import "Book.h"
+#import "BookShelfOperator.h"
 
 @interface BookShelf ()
 @property (nonatomic, strong) NSMutableArray * books;
@@ -17,7 +19,11 @@
 
 #pragma mark - public
 - (void)addBook:(Book *)book {
-    if (!book) return;
+    if (!book || ![book isKindOfClass:[Book class]]) return;
+    if (self.maxCount != 0 && self.maxCount == self.books.count) {
+        NSLog(@"达到最大的储存限制!!");
+        return;
+    }
     [self.books addObject:book];
 }
 
@@ -37,6 +43,10 @@
 #pragma mark - protocol
 - (id<Iterator>)iterator {
     return [[BookShelfIterator alloc] initWithBookShelf:self];
+}
+
+- (id<Operator>)operate {
+    return [[BookShelfOperator alloc] initWithBookShelf:self];
 }
 
 #pragma mark - lazy load
