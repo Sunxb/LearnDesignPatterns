@@ -11,6 +11,8 @@
 #import "BookShelf.h"
 #import "BookShelfIterator.h"
 
+#import "StringDisplay.h"
+#import "CharDisplay.h"
 
 @interface ViewController ()
 
@@ -22,9 +24,20 @@
     [super viewDidLoad];
     
     // 迭代器模式
-    [self testIteratorPattern];
+//    [self testIteratorPattern];
     
+    // 模板
+    [self testTemplateMethod];
 
+}
+
+#pragma mark - Template Method 模板
+- (void)testTemplateMethod {
+    AbstractDisplay * display1 = [[CharDisplay alloc] initWithString:@"hello,world"];
+    [display1 display];
+    
+    AbstractDisplay * display2 = [[StringDisplay alloc] initWithString:@"my design pattern"];
+    [display2 display];
 }
 
 #pragma mark - 迭代器模式

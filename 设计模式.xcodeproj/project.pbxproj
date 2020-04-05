@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8D38C8F42436FB850027C50E /* BookShelfOperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D38C8F32436FB850027C50E /* BookShelfOperator.m */; };
+		8D38C8F8243709430027C50E /* Banner.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D38C8F7243709430027C50E /* Banner.m */; };
+		8D38C8FC24370A070027C50E /* BannerPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D38C8FB24370A070027C50E /* BannerPrinter.m */; };
+		8D38C8FF24370A6E0027C50E /* BannerPrinter2.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D38C8FE24370A6E0027C50E /* BannerPrinter2.m */; };
+		8D38C90324371F790027C50E /* AbstractDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D38C90224371F790027C50E /* AbstractDisplay.m */; };
+		8D38C906243720400027C50E /* CharDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D38C905243720400027C50E /* CharDisplay.m */; };
+		8D38C9092437208D0027C50E /* StringDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D38C9082437208D0027C50E /* StringDisplay.m */; };
 		8D72F8DE24333D2000F847BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D72F8DD24333D2000F847BE /* AppDelegate.m */; };
 		8D72F8E424333D2000F847BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D72F8E324333D2000F847BE /* ViewController.m */; };
 		8D72F8E724333D2100F847BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D72F8E524333D2100F847BE /* Main.storyboard */; };
@@ -23,6 +29,19 @@
 		8D38C8F12436FABF0027C50E /* Operator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Operator.h; sourceTree = "<group>"; };
 		8D38C8F22436FB850027C50E /* BookShelfOperator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookShelfOperator.h; sourceTree = "<group>"; };
 		8D38C8F32436FB850027C50E /* BookShelfOperator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookShelfOperator.m; sourceTree = "<group>"; };
+		8D38C8F6243709430027C50E /* Banner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Banner.h; sourceTree = "<group>"; };
+		8D38C8F7243709430027C50E /* Banner.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Banner.m; sourceTree = "<group>"; };
+		8D38C8F9243709DF0027C50E /* Print.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Print.h; sourceTree = "<group>"; };
+		8D38C8FA24370A070027C50E /* BannerPrinter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerPrinter.h; sourceTree = "<group>"; };
+		8D38C8FB24370A070027C50E /* BannerPrinter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerPrinter.m; sourceTree = "<group>"; };
+		8D38C8FD24370A6E0027C50E /* BannerPrinter2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerPrinter2.h; sourceTree = "<group>"; };
+		8D38C8FE24370A6E0027C50E /* BannerPrinter2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerPrinter2.m; sourceTree = "<group>"; };
+		8D38C90124371F790027C50E /* AbstractDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractDisplay.h; sourceTree = "<group>"; };
+		8D38C90224371F790027C50E /* AbstractDisplay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractDisplay.m; sourceTree = "<group>"; };
+		8D38C904243720400027C50E /* CharDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CharDisplay.h; sourceTree = "<group>"; };
+		8D38C905243720400027C50E /* CharDisplay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CharDisplay.m; sourceTree = "<group>"; };
+		8D38C9072437208D0027C50E /* StringDisplay.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringDisplay.h; sourceTree = "<group>"; };
+		8D38C9082437208D0027C50E /* StringDisplay.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringDisplay.m; sourceTree = "<group>"; };
 		8D72F8D924333D2000F847BE /* 设计模式.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "设计模式.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D72F8DC24333D2000F847BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8D72F8DD24333D2000F847BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -54,6 +73,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D38C8F5243709190027C50E /* Adapter(适配器) */ = {
+			isa = PBXGroup;
+			children = (
+				8D38C8F6243709430027C50E /* Banner.h */,
+				8D38C8F7243709430027C50E /* Banner.m */,
+				8D38C8F9243709DF0027C50E /* Print.h */,
+				8D38C8FA24370A070027C50E /* BannerPrinter.h */,
+				8D38C8FB24370A070027C50E /* BannerPrinter.m */,
+				8D38C8FD24370A6E0027C50E /* BannerPrinter2.h */,
+				8D38C8FE24370A6E0027C50E /* BannerPrinter2.m */,
+			);
+			path = "Adapter(适配器)";
+			sourceTree = "<group>";
+		};
+		8D38C90024371E850027C50E /* TemplateMethod(模板) */ = {
+			isa = PBXGroup;
+			children = (
+				8D38C90124371F790027C50E /* AbstractDisplay.h */,
+				8D38C90224371F790027C50E /* AbstractDisplay.m */,
+				8D38C904243720400027C50E /* CharDisplay.h */,
+				8D38C905243720400027C50E /* CharDisplay.m */,
+				8D38C9072437208D0027C50E /* StringDisplay.h */,
+				8D38C9082437208D0027C50E /* StringDisplay.m */,
+			);
+			path = "TemplateMethod(模板)";
+			sourceTree = "<group>";
+		};
 		8D72F8D024333D2000F847BE = {
 			isa = PBXGroup;
 			children = (
@@ -73,7 +119,9 @@
 		8D72F8DB24333D2000F847BE /* 设计模式 */ = {
 			isa = PBXGroup;
 			children = (
-				8D72F8F524333D2C00F847BE /* 迭代器(Iterator)模式 */,
+				8D38C90024371E850027C50E /* TemplateMethod(模板) */,
+				8D38C8F5243709190027C50E /* Adapter(适配器) */,
+				8D72F8F524333D2C00F847BE /* Iterator(迭代器)模式 */,
 				8D72F8DC24333D2000F847BE /* AppDelegate.h */,
 				8D72F8DD24333D2000F847BE /* AppDelegate.m */,
 				8D72F8E224333D2000F847BE /* ViewController.h */,
@@ -87,7 +135,7 @@
 			path = "设计模式";
 			sourceTree = "<group>";
 		};
-		8D72F8F524333D2C00F847BE /* 迭代器(Iterator)模式 */ = {
+		8D72F8F524333D2C00F847BE /* Iterator(迭代器)模式 */ = {
 			isa = PBXGroup;
 			children = (
 				8D72F8FF24333E7100F847BE /* Aggregate.h */,
@@ -102,7 +150,7 @@
 				8D38C8F22436FB850027C50E /* BookShelfOperator.h */,
 				8D38C8F32436FB850027C50E /* BookShelfOperator.m */,
 			);
-			path = "迭代器(Iterator)模式";
+			path = "Iterator(迭代器)模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +223,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D38C9092437208D0027C50E /* StringDisplay.m in Sources */,
 				8D72F8FB24333E1700F847BE /* BookShelf.m in Sources */,
+				8D38C90324371F790027C50E /* AbstractDisplay.m in Sources */,
+				8D38C8F8243709430027C50E /* Banner.m in Sources */,
 				8D72F8F824333DF600F847BE /* Book.m in Sources */,
+				8D38C906243720400027C50E /* CharDisplay.m in Sources */,
+				8D38C8FF24370A6E0027C50E /* BannerPrinter2.m in Sources */,
+				8D38C8FC24370A070027C50E /* BannerPrinter.m in Sources */,
 				8D72F8E424333D2000F847BE /* ViewController.m in Sources */,
 				8D72F8FE24333E3A00F847BE /* BookShelfIterator.m in Sources */,
 				8D72F8DE24333D2000F847BE /* AppDelegate.m in Sources */,
